@@ -1,0 +1,35 @@
+.footer-block__card
+{
+    background-color: #d6d6d6;
+    text-align: center;
+    margin: 10px 0;
+    max-width: 223px;
+
+}
+
+.card_image
+{
+    width: 200px;
+    height: 220px;
+}
+
+.footer-block__gallery
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px)
+{
+    .footer-block__gallery
+    {
+        flex-direction: column;
+    }
+
+    .footer-block__card
+    {
+        max-width: 500px;
+    }
+}

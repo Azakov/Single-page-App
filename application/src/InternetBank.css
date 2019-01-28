@@ -1,0 +1,22 @@
+.wrapper-my-bank li
+{
+    margin-bottom: 15px;
+}
+
+.page__list-form
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page__list-form label
+{
+    display: inline-block;
+    width: 150px;
+}
+
+.my-bank__button
+{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,79 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+input[name='payment'],
+input[name='bank']
+{
+    display: none;
+}
+
+
+input[type='text']:focus:invalid,
+input[type='email']:focus:invalid
+{
+    background-color: #ff625f;
+}
+
+input[type='text']:focus:valid,
+input[type='email']:focus:valid
+{
+    background-color: lightgreen;
+}
+
+input[id='any-bank']:checked ~ .any-bank,
+input[id='my-bank']:checked ~ .my-bank
+{
+    background-color: #cfcfcf;
+}
+
+input[id='just-pay']:checked ~ .just-pay,
+input[id='get-payment']:checked ~ .get-payment
+{
+    color: blue;
+}
+
+input[id='any-bank']:checked ~ .content-any-bank,
+input[id='my-bank']:checked ~ .content-my-bank,
+input[id='get-payment']:checked ~ .content-call-payment
+{
+    display: block;
+}
+
+input[id='get-payment']:checked ~ .main-block__bank,
+input[id='get-payment']:checked ~ .content-any-bank,
+input[id='get-payment']:checked ~ .content-my-bank
+{
+    display: none;
+}
+
+.content-my-bank,
+.content-any-bank,
+.content-call-payment
+{
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+    input[id='any-bank']:checked ~ .content-any-bank,
+    input[id='my-bank']:checked ~ .content-my-bank,
+    input[id='get-payment']:checked ~ .content-call-payment
+    {
+        display: block;
+    }
+
+    input[id='get-payment']:checked ~ .main-block__bank,
+    input[id='get-payment']:checked ~ .content-any-bank,
+    input[id='get-payment']:checked ~ .content-my-bank
+    {
+        display: none;
+    }
+}

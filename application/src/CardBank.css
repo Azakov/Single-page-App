@@ -1,0 +1,110 @@
+.icon
+{
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.icon_image
+{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.card-inputs > input
+{
+    margin: 25px;
+}
+
+.enter-style
+{
+    padding-left: 5px;
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid grey 1px;
+}
+
+.enter-style:focus
+{
+    outline: none;
+}
+
+.content-any-bank__card-any-bank
+{
+    margin: 20px;
+}
+
+.card-any-bank
+{
+    border-radius: 30px;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 10px 1px;
+}
+
+.page__list-form
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page__list-form label
+{
+    display: inline-block;
+    width: 150px;
+}
+
+.form-any-bank li
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.wrapper-any-bank
+{
+    display: grid;
+    grid-template-columns: 500px auto;
+}
+
+.card-any-bank__large
+{
+    width: 75%;
+    height: 18px;
+}
+
+.card-any-bank__mid
+{
+    width: 50%;
+    height: 18px;
+}
+
+.card-any-bank__small
+{
+    width: 11%;
+    height: 18px;
+}
+
+
+@media (max-width: 768px)
+{
+
+    input[id='any-bank']:checked ~ .content-any-bank .wrapper-any-bank,
+    input[id='my-bank']:checked ~ .content-my-bank,
+    input[id='get-payment']:checked ~ .content-call-payment
+    {
+        display: block;
+    }
+
+    input[id='get-payment']:checked ~ .main-block__bank,
+    input[id='get-payment']:checked ~ .content-any-bank,
+    input[id='get-payment']:checked ~ .content-my-bank
+    {
+        display: none;
+    }
+}
